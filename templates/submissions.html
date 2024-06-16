@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submissions</title>
+</head>
+<body>
+    <h2>Form Submissions</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Address</th>
+        </tr>
+        {% for form in forms %}
+        <tr>
+            <td>{{ form.id }}</td>
+            <td>{{ form.name }}</td>
+            <td>{{ form.age }}</td>
+            <td>{{ form.grade }}</td>
+            <td>{{ form.address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Go back to the form</a>
+</body>
+</html>
